@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trivandrum Tourism | Kerala</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-image:url( 5f4aa2dd-9b05-4ce9-9f03-17e8a887228a.jpg);
+      
+      color: white;
+      display: flex;
+      height:60vh;
+      justify-content: center;
+      align-items: center;
+      
+      
+    }
+    h2{
+      margin: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 45px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    nav {
+      background-color: #006241;
+      display:flex;
+      justify-content: space-around;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      font:200S;
+      padding:10px 20px;
+      transition:ease-in-out ;
+    }
+
+    nav a:hover {
+      background-color: #004d33;
+      border-radius: 5px;
+    }
+
+    .attractions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+.card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card:hover {
+      transform:scale(1.05);
+      
+     
+    }
+
+    .card h3 {
+      padding: 10px;
+      color: #006241;
+    }
+
+    .card p {
+      padding: 0 1rem 1rem;
+    }
+
+    .culture {
+      padding: 20px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .culture h2 {
+      margin-bottom: 1rem;
+    }
+
+    .culture p {
+     padding: 10px;
+      margin: auto;
+    }
+
+    .booking {
+      background-color: #e0f2f1;
+      padding: 20px;
+    }
+
+    .booking form {
+      
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    
+
+    .booking input, .booking select {
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .booking button {
+      margin-top: 1.5rem;
+      padding: 0.7rem;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+      cursor: pointer;
+    }
+
+    .booking button:hover {
+      background-color: #004d40;
+    }
+
+    footer {
+      background: #006241;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      
+    }
+ @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+
+   
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      nav {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Trivandrum, Kerala</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#top-attractions">Attractions</a>
+    <a href="#culture">Culture</a>
+    <a href="#booking">Book Now</a>
+  </nav>
+   <section >
+  <h2 id="top-attractions" >Top Attractions</h2>
+   </section>
+
+  <section id="attractions" class="attractions">
+    
+
+   
+    <div class="card">
+      <img src="GettyImages-1299171226.webp" alt="Padmanabhaswamy Temple">
+      <h3>Padmanabhaswamy Temple</h3>
+      <p>An iconic ancient temple famous for its rich heritage and architecture.</p>
+    </div>
+    <div class="card">
+      <img src="download.jpeg" alt="Kovalam Beach">
+      <h3>Kovalam Beach</h3>
+      <p>Golden sands and turquoise waters – a paradise for sun seekers.</p>
+    </div>
+    <div class="card">
+      <img src="download (1).jpeg" alt="Napier Museum">
+      <h3>Napier Museum</h3>
+      <p>A 19th-century art and natural history museum set in a lush park.</p>
+    </div>
+    <div class="card">
+      <img src="Ponmudi-Hills-in-Kerala.jpg" alt="Napier Museum">
+      <h3>Ponmudi</h3>
+      <p>Ponmudi is a picturesque hill station, known for its misty landscapes, lush green valleys, and winding mountain trails.</p>
+    </div>
+  </section>
+
+  <section id="culture" class="culture">
+    <h2>Discover the Culture</h2>
+    <p>Trivandrum is the cultural heart of Kerala, offering a rich blend of classical dance, vibrant festivals, and traditional Kerala cuisine. Enjoy Kathakali performances, Onam celebrations, and more.</p>
+  </section>
+
+  <section id="booking" class="booking">
+    <h2 style="text-align:center;">Book Your Trip</h2>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="attraction">Select Destination</label>
+      <select id="attraction">
+        <option></option>
+        <option>Padmanabhaswamy Temple</option>
+        <option>Kovalam Beach</option>
+        <option>Napier Museum</option>
+        <option>Ponmudi</option>
+      </select>
+
+      <label for="date">Visit Date</label>
+      <input type="date" id="date" required>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Trivandrum Tourism | Kerala God's Own Country</p>
+  </footer>
+
+</body>
+</html>
